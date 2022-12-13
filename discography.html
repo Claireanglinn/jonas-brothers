@@ -11,7 +11,46 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <h1 class="is-size-1 has-text-centered">ALBUMS & SINGLES</h1>
+    <h4 class="is-size-1 has-text-centered">BAILEY ZIMMERMAN</h4>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <a
+        role="button"
+        class="navbar-burger"
+        aria-label="menu"
+        aria-expanded="false"
+        data-target="navbarBasicExample"
+      >
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="is-flex is-justify-content-space-around nav">
+          <a class="navbar-item is-size-3 has-text-centered" href="index.html">
+            Home
+          </a>
+          <a class="navbar-item is-size-3 has-text-centered" href="about.html">
+            About
+          </a>
+          <a
+            class="navbar-item is-size-3 has-text-centered"
+            href="music-videos.html"
+          >
+            Music Videos
+          </a>
+          <a
+            class="navbar-item is-size-3 has-text-centered"
+            href="discography.html"
+          >
+            Discography
+          </a>
+          <a class="navbar-item is-size-3 has-text-centered" href="tour.html">
+            Tour
+          </a>
+        </div>
+      </div>
+    </nav>
+    <h1 class="is-size-1 has-text-centered">albums & singles</h1>
     <div class="columns is-centered mx-4">
       <div class="column has-text-centered">
         <img
@@ -42,7 +81,7 @@
           src="./images/where it ends.jpg"
           alt="where it ends album art"
         />
-        <h2 class="is-size-3 has-text-weight-bold">2021</h2>
+        <h2 class="is-size-3 has-text-weight-bold">2022</h2>
         <p class="is-size-3">Where It Ends</p>
       </div>
       <div class="column has-text-centered">
@@ -51,7 +90,7 @@
           src=".//images/fall in love.jpg"
           alt="fall in love"
         />
-        <h2 class="is-size-3 has-text-weight-bold">2021</h2>
+        <h2 class="is-size-3 has-text-weight-bold">2022</h2>
         <p class="is-size-3">Fall In Love</p>
       </div>
       <div class="column has-text-centered">
@@ -60,11 +99,50 @@
           src="./images/leave the light on.jpg"
           alt="Leave the light on"
         />
-        <h2 class="is-size-3 has-text-weight-bold">2021</h2>
+        <h2 class="is-size-3 has-text-weight-bold">2022</h2>
         <p class="is-size-3">
           Intro Never Leave Waiting House On Fire From The Fall Trainwreck
         </p>
       </div>
     </div>
+
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <p>
+          <strong>bailey zimmerman</strong> by
+          <a href="https://jgthms.com">claire anglin</a>. The source code is not
+          licensed
+          <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The
+          website content is not licensed
+          <a
+            href="https://nossi.edu/?campaignid=19166036121&adgroupid&adid&gclid=Cj0KCQiAnNacBhDvARIsABnDa6_xZuHKQJm9LH2WQmZI5NpHE9mSqPPAB3wkRGm5zOUCcFs0l6C2SjAaAi4FEALw_wcB"
+            >nossi college of art/web language 2</a
+          >.
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        // Get all "navbar-burger" elements
+        const $navbarBurgers = Array.prototype.slice.call(
+          document.querySelectorAll(".navbar-burger"),
+          0
+        );
+
+        // Add a click event on each of them
+        $navbarBurgers.forEach((el) => {
+          el.addEventListener("click", () => {
+            // Get the target from the "data-target" attribute
+            const target = el.dataset.target;
+            const $target = document.getElementById(target);
+
+            // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+            el.classList.toggle("is-active");
+            $target.classList.toggle("is-active");
+          });
+        });
+      });
+    </script>
   </body>
 </html>

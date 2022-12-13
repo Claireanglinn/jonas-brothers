@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Zimmerman Music Videos</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+</html>
+<body>
+  <h4 class="has-text-centered">BAILEY ZIMMERMAN</h4>
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <a
+      role="button"
+      class="navbar-burger"
+      aria-label="menu"
+      aria-expanded="false"
+      data-target="navbarBasicExample"
+    >
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="is-flex is-justify-content-space-around nav">
+        <a class="navbar-item is-size-3 has-text-centered" href="index.html">
+          Home
+        </a>
+        <a class="navbar-item is-size-3 has-text-centered" href="about.html">
+          About
+        </a>
+        <a
+          class="navbar-item is-size-3 has-text-centered"
+          href="music-videos.html"
+        >
+          Music Videos
+        </a>
+        <a
+          class="navbar-item is-size-3 has-text-centered"
+          href="discography.html"
+        >
+          Discography
+        </a>
+        <a class="navbar-item is-size-3 has-text-centered" href="tour.html">
+          Tour
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="header is-size-1 has-text-centered">MUSIC VIDEOS</header>
+  <div class="columns">
+    <div class="column">
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/OKOSkmly_ys"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/d1yKrnPHAmo"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/QyapQFCHUlg"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/WVh073Yujmo"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/iM3u6QIAo08"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/9avA6DRtRq8"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p>
+        <strong>bailey zimmerman</strong> by
+        <a href="https://jgthms.com">claire anglin</a>. The source code is not
+        licensed
+        <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The
+        website content is not licensed
+        <a
+          href="https://nossi.edu/?campaignid=19166036121&adgroupid&adid&gclid=Cj0KCQiAnNacBhDvARIsABnDa6_xZuHKQJm9LH2WQmZI5NpHE9mSqPPAB3wkRGm5zOUCcFs0l6C2SjAaAi4FEALw_wcB"
+          >nossi college of art/web language 2</a
+        >.
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      // Get all "navbar-burger" elements
+      const $navbarBurgers = Array.prototype.slice.call(
+        document.querySelectorAll(".navbar-burger"),
+        0
+      );
+
+      // Add a click event on each of them
+      $navbarBurgers.forEach((el) => {
+        el.addEventListener("click", () => {
+          // Get the target from the "data-target" attribute
+          const target = el.dataset.target;
+          const $target = document.getElementById(target);
+
+          // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+          el.classList.toggle("is-active");
+          $target.classList.toggle("is-active");
+        });
+      });
+    });
+  </script>
+</body>

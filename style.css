@@ -1,12 +1,13 @@
 
 
 h1{
-    font-family:'Fort Death' !important;
+    font-family: 'Kiona'!important;
+    font-size: 500px;
 }
 
 h4{
-    font-family:'Fort Death' !important;
-    font-size: 60px;
+    font-family:'Edo SZ' !important;
+    font-size: 100px;
 }
 
 .column{
@@ -17,3 +18,63 @@ font-family:'Kiona' ;
     font-family:'Kiona' ;
 }
 
+p{
+    font-family:'Kiona' ; 
+    padding-right: 40px;
+}
+
+.column{
+    font-family:'Kiona'
+    
+    }
+
+    p{
+    font-size: 12px;
+   
+    }
+    
+    h5{
+        padding-top: 60px;
+        text-align: center;
+    }
+
+    h6{
+        font-family:'Kiona';
+    }
+
+    h7{
+        font-family:'Kiona' !important;
+    }
+
+.nav{
+    width: 100%;
+}
+
+.header{
+    font-family:'Kiona';
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+
+
+  .top-left {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    font-size: 90px;
+    font-family:'Kiona' ;
+  }
+
+  .column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+  .row::after {
+    clear: both;
+    display: table;
+  }

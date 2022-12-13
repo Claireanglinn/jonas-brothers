@@ -11,7 +11,46 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
 </html>
-<body>
+<body >
+  <h4 class=" has-text-centered">BAILEY ZIMMERMAN</h4>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <a
+        role="button"
+        class="navbar-burger"
+        aria-label="menu"
+        aria-expanded="false"
+        data-target="navbarBasicExample"
+      >
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="is-flex is-justify-content-space-around nav">
+          <a class="navbar-item is-size-3 has-text-centered" href="index.html">
+            Home
+          </a>
+          <a class="navbar-item is-size-3 has-text-centered" href="about.html">
+            About
+          </a>
+          <a
+            class="navbar-item is-size-3 has-text-centered"
+            href="music-videos.html"
+          >
+            Music Videos
+          </a>
+          <a
+            class="navbar-item is-size-3 has-text-centered"
+            href="discography.html"
+          >
+            Discography
+          </a>
+          <a class="navbar-item is-size-3 has-text-centered" href="tour.html">
+            Tour
+          </a>
+        </div>
+      </div>
+    </nav>
   <h1 class="is-size-1 has-text-centered">NEXT TOUR</h1>
   <div class="columns is-centered mx-4">
     <div class="column has-text-centered"></div>
@@ -31,7 +70,80 @@
   </p>
   <p class="is-size-3 has-text-centered">MCMENAMINS MISSION THEATER PORTLAND, OR</p>
   
-  <section class = "section">
-    <div class = "container has-text-centered">
-    <a class = "button is-primary is-outlined ">GET TICKETS NOW</a>
+  <p class="is-size-3 has-text-centered">SAT, DEC 10</p>
+  <p class="is-size-3 has-text-centered"> HOUSE OF BLUES SAN DIEGO, SAN DIEGO CA</p>
+
+  <h6 class="is-size-3 has-text-centered">END OF YEAR</h6>
+  
+  <a href="https://www.stubhub.com/bailey-zimmerman-tickets/category/150016605/?AffiliateID=49&adposition=&PCID=PSUSGOOCONBAILEF62C12C4DC&AdID=618240514934&MetroRegionID=&psc=&psc=&ps=&ps=&ps_p=0&ps_c=18142996312&ps_ag=144309616710&ps_tg=kwd-1688009087719&ps_ad=618240514934&ps_adp=&ps_adp=&ps_fi=&ps_fi=&ps_li=&ps_li=&ps_lp=9013139&ps_n=g&ps_d=c&gcid=C12289X486&utm_source=google&utm_medium=paid-search&utm_sub_medium=prospecting&utm_term=nb&utm_campaign=18142996312%3adefault&utm_content=default&keyword=144309616710_kwd-1688009087719_c&creative=618240514934&utm_kxconfid=s2rshsbmv&kwt=nb&mt=e&kw=bailey+zimmerman+tickets&gclid=Cj0KCQiAm5ycBhCXARIsAPldzoWiBa2Y9iPN3hElrVQzv4xU_v49qItLYKI7F8kCEm9xil-iCCU8Q-YaAkXpEALw_wcB">
+    <button class="button is-large">
+      <span class="icon is-medium">
+        <img src="./images/stubhub.png" alt="tickets" />
+      </span>
+      <span>Get Tickets Now</span>
+    </a>
+    </button>
+    
+
+    <div class="columns">
+      <div class="column">
+        <img src="./images/concert1.jpg" alt="concert1">
+      </div>
+      <div class="column">
+   <img src="./images/concert2.jpg" alt="concert2">
+      </div>
+      <div class="column">
+       <img src="./images/concert3.jpg" alt="concert3">
+      </div>
+      <div class="column">
+       <img src="./images/concert4.jpg" alt="concert4">
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <p>
+          <strong>bailey zimmerman</strong> by <a href="https://jgthms.com">claire anglin</a>. The source code is not licensed
+          <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
+          is not licensed <a href="https://nossi.edu/?campaignid=19166036121&adgroupid&adid&gclid=Cj0KCQiAnNacBhDvARIsABnDa6_xZuHKQJm9LH2WQmZI5NpHE9mSqPPAB3wkRGm5zOUCcFs0l6C2SjAaAi4FEALw_wcB">nossi college of art/web language 2</a>.
+        </p>
+      </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        // Get all "navbar-burger" elements
+        const $navbarBurgers = Array.prototype.slice.call(
+          document.querySelectorAll(".navbar-burger"),
+          0
+        );
+  
+        // Add a click event on each of them
+        $navbarBurgers.forEach((el) => {
+          el.addEventListener("click", () => {
+            // Get the target from the "data-target" attribute
+            const target = el.dataset.target;
+            const $target = document.getElementById(target);
+  
+            // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+            el.classList.toggle("is-active");
+            $target.classList.toggle("is-active");
+          });
+        });
+      });
+    </script>
+
+  
 </body>
